@@ -117,13 +117,7 @@ const deleteMutation = useMutation({
           Edit
         </button>
         {/* TODO: disable while deleteMutation.isPending; label it "Deleting…" */}
-        <button
-  className="btn-danger"
-  onClick={handleDelete}
-  disabled={deleteMutation.isPending}
->
-  {deleteMutation.isPending ? "Deleting…" : "Delete"}
-</button>
+        
       </div>
     </li>
   );
